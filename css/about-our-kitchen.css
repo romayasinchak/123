@@ -1,0 +1,79 @@
+.kitchen-logo__up-text {
+  font-weight: 400;
+  color: #b4b4b4;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+
+.kitchen__logo {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.3em;
+  color: var(--mimino);
+  margin-bottom: 12px;
+}
+
+.kitchen__down-container {
+  display: flex;
+  align-items: center;
+}
+
+.kitchen__gallery-container {
+  display: flex;
+}
+
+.kitchen__sgv {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.kitchen-logo__down-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1024px) {
+  .kitchen-logo__up-text {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 4px;
+  }
+
+  .kitchen__logo {
+    font-size: 64px;
+    line-height: 69px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .kitchen__photo-container {
+    margin-left: 140px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+
+  .kitchen__down-container {
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .kitchen__gallery-container {
+    margin-left: 69px;
+    margin-bottom: 20px;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 0px) {
+}

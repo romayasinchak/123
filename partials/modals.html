@@ -1,0 +1,212 @@
+<!-- -----------------MODAL TABLE--------------- -->
+
+<div class="modal" data-modal="1">
+  <button type="button" class="close-btn js-modal-close">
+    <svg class="close-btn-icon" width="24" height="24">
+      <use href="../img/sprite.svg#icon-chrest"></use>
+    </svg>
+  </button>
+
+  <h1 class="modal-title">Забронювати столик</h1>
+  <form class="form" autocomplete="off">
+    <div class="form-wrap">
+      <div class="modal-table-wrap">
+        <label class="modal-form-field">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-form-input"
+            required
+            minlength="2"
+            placeholder="Ваше ім’я"
+          />
+          <span class="form-label">На кого забронювати столик?</span>
+        </label>
+        <label class="modal-form-field">
+          <input
+            type="tel"
+            name="user_phone"
+            class="modal-form-input"
+            required
+            title="+38 (___) ___-__-__"
+            placeholder="+38 (___) ___-__-__"
+            pattern="\+?[0-9\s\-\(\)]+"
+          />
+          <span class="form-label">Номер телефону</span>
+        </label>
+      </div>
+
+      <div class="modal-table-wrap">
+        <label class="modal-form-field">
+          <span class="wrap-for-icon">
+            <select name="table" class="select modal-form-input">
+              <option value="table-2" class="select-option">2</option>
+              <option value="table-4" class="select-option">4</option>
+              <option value="table-6" class="select-option">6</option>
+            </select>
+            <svg class="form-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-down-arrow"></use>
+            </svg>
+          </span>
+
+          <span class="form-label">Столик на яку кількість осіб?</span>
+        </label>
+
+        <span class="wrap-for-icon">
+          <input
+            class="select modal-form-input"
+            type="date"
+            name="table-reserv-date"
+            min="2022-02-22"
+            max="2023-05-01"
+            required
+          />
+          <svg class="form-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-down-arrow"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <button type="submit" class="modal-btn">Оформити бронювання</button>
+  </form>
+</div>
+
+<!-- ------------------MODAL ROOM----------------- -->
+
+<div class="modal" data-modal="2">
+  <button type="button" class="close-btn js-modal-close">
+    <svg class="close-btn-icon" width="24" height="24">
+      <use href="../img/sprite.svg#icon-chrest"></use>
+    </svg>
+  </button>
+
+  <h1 class="modal-title">Забронювати номер</h1>
+  <form class="form" autocomplete="off">
+    <div class="modal-room-wrap">
+      <label class="modal-form-field">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form-input"
+          required
+          minlength="2"
+          placeholder="Ваше ім’я"
+        />
+        <span class="form-label">На кого забронювати номер?</span>
+      </label>
+      <label class="modal-form-field">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form-input"
+          required
+          title="+38 (___) ___-__-__"
+          placeholder="+38 (___) ___-__-__"
+          pattern="\+?[0-9\s\-\(\)]+"
+        />
+        <span class="form-label">Номер телефону</span>
+      </label>
+    </div>
+
+    <label class="modal-form-field category-room">
+      <span class="wrap-for-icon">
+        <select name="room-category" class="select modal-form-input">
+          <option value="room-category-luxe-2" class="select-option">
+            Двомісний люкс
+          </option>
+          <option value="room-category-standart-3" class="select-option">
+            Трьохмісний номер
+          </option>
+          <option value="room-standart-2" class="select-option">
+            Двомісний номер
+          </option>
+        </select>
+        <svg class="form-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-down-arrow"></use>
+        </svg>
+      </span>
+      <span class="form-label">Категорія номеру</span>
+    </label>
+
+    <div class="modal-room-wrap">
+      <label class="modal-form-field">
+        <span class="wrap-for-icon">
+          <input
+            class="select modal-form-input"
+            type="date"
+            name="arrival-date"
+            min="2022-02-22"
+            max="2023-05-01"
+            required
+          />
+          <svg class="form-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-down-arrow"></use>
+          </svg>
+        </span>
+        <span class="form-label bigger-lable">Дата заїзду</span>
+      </label>
+
+      <label class="modal-form-field">
+        <span class="wrap-for-icon">
+          <input
+            class="select modal-form-input"
+            type="date"
+            name="departure-date"
+            min="2022-02-22"
+            max="2023-05-01"
+            required
+          />
+          <svg class="form-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-down-arrow"></use>
+          </svg>
+        </span>
+        <span class="form-label bigger-lable">Дата виїзду</span>
+      </label>
+    </div>
+
+    <button type="submit" class="modal-btn">Оформити бронювання</button>
+  </form>
+</div>
+
+<!-- ------------------MODAL PRICE----------------- -->
+
+<div class="modal" data-modal="3">
+  <button type="button" class="close-btn js-modal-close">
+    <svg class="close-btn-icon" width="24" height="24">
+      <use href="../img/sprite.svg#icon-chrest"></use>
+    </svg>
+  </button>
+
+  <h1 class="modal-title">Ціни на номер</h1>
+  <h2 class="name-room-title">Двомісний люкс</h2>
+  <p class="name-room-text">Категорія номеру</p>
+
+  <form class="form" autocomplete="off">
+    <div class="modal-price-wrap">
+      <label class="modal-form-field">
+        <span class="wrap-for-icon">
+          <select name="table" class="select modal-form-input">
+            <option value="table-2" class="select-option">2</option>
+            <option value="table-4" class="select-option">4</option>
+            <option value="table-6" class="select-option">6</option>
+          </select>
+          <svg class="form-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-down-arrow"></use>
+          </svg>
+        </span>
+        <span class="form-label bigger-lable">Кількість ночей</span>
+      </label>
+
+      <div class="modal-form-field">
+        <span class="modal-form-input room-price">1000</span>
+        <span class="form-label bigger-lable">Ціна</span>
+      </div>
+    </div>
+
+    <button type="submit" class="modal-btn">Забронювати номер</button>
+  </form>
+</div>
+
+<!-- -----------------OVERLAY---------------------- -->
+<div class="overlay js-overlay-modal"></div>
